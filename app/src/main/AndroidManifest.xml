@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.torrelaymonitoring">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- An activity is UI -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Notifications"
+            android:enabled="true"
+            android:exported="false">
+            <!--service is not UI, runs in background, can respond to events-->
+            <!--exporting means that other apps can call it-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="com.google.firebase.MESSAGING_EVENT"/> -->
+            <!-- </intent-filter> -->
+        </service>
+        <service
+            android:name=".TorFirebaseIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/tor_onion_heart" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+
+    </application>
+
+</manifest>

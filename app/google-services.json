@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "394614506589",
+    "firebase_url": "https://torrelaymonitoring.firebaseio.com",
+    "project_id": "torrelaymonitoring",
+    "storage_bucket": "torrelaymonitoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394614506589:android:7a27ffc5ae0105d6",
+        "android_client_info": {
+          "package_name": "com.example.torrelaymonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394614506589-ejf2864upn558k4rhdl4hbepe6afpb9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.torrelaymonitoring",
+            "certificate_hash": "A5991BADCF40B973CC80E1E49956CE7D5140ABF5"
+          }
+        },
+        {
+          "client_id": "394614506589-0cq2s17mpbvktrua7j8eg7s46epsj5nv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP29wNcd9HST5pGOJ_zuTV646qiy2qbJs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394614506589-0cq2s17mpbvktrua7j8eg7s46epsj5nv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
